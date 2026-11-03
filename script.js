@@ -56,6 +56,10 @@
       </article>`).join("")
     : `<p class="empty">No shows on the calendar right now. Follow <a href="${igUrl}" target="_blank" rel="noopener">@${esc(S.instagram)}</a> for new dates.</p>`;
 
+  // Hero photo
+  if (S.heroImage) $("hero-photo").innerHTML = `<img src="${esc(S.heroImage)}" alt="${esc(S.realName || S.name)} on stage">`;
+  else $("hero-photo").remove();
+
   // Bio + headshot
   $("bio").innerHTML = (S.bio || []).map((p) => `<p>${esc(p)}</p>`).join("");
   $("headshot").innerHTML = S.headshot
