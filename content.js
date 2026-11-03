@@ -52,6 +52,6 @@ const SITE = {
     { src: "photos/flyer-nov14-uxbridge.jpg", caption: "Nov 14: Spanky's Comedy Fall Series, Uxbridge MA" },
     { src: "photos/steve-onstage.jpg", caption: "On stage" },
     { src: "", caption: "Open mic night" },
-    { src: "", caption: "On the road" },
+    { src: "photos/crowd-selfie.jpg", caption: "Packed house" },
   ],
 };
