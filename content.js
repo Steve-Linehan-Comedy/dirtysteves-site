@@ -34,7 +34,7 @@ const SITE = {
   // venue, time and ticketUrl are optional. Leave "" if unknown.
   shows: [
     { date: "2026-11-07", city: "Salisbury, MA", venue: "Wicked Funny Comedy Club at the Hungry Traveler", time: "8:00 PM (doors 7:00)", note: "Featuring · Merrimack Valley's Funniest Person Contest · $20", ticketUrl: "https://wickedfunnysalisbury.com" },
-    { date: "2026-11-14", city: "Uxbridge, MA", venue: "", time: "", note: "", ticketUrl: "" },
+    { date: "2026-11-14", city: "Uxbridge, MA", venue: "Spanky's Comedy at The Polish Hall, 217 Mendon St", time: "8:00 PM", note: "Hosting · Headliner Frank Santorelli (The Sopranos) · $30", ticketUrl: "https://www.spankyscomedy.com" },
     { date: "2026-11-19", city: "Pembroke, MA", venue: "", time: "", note: "", ticketUrl: "" },
     { date: "2026-11-20", city: "Wakefield, MA", venue: "", time: "", note: "", ticketUrl: "" },
     { date: "2026-11-21", city: "Hudson, NH", venue: "", time: "", note: "", ticketUrl: "" },
@@ -48,7 +48,7 @@ const SITE = {
   photos: [
     { src: "photos/flyer-fall-2026.jpg", caption: "Fall 2026 tour dates" },
     { src: "photos/flyer-nov7-salisbury.jpg", caption: "Nov 7: Merrimack Valley's Funniest Person Contest, Salisbury MA" },
-    { src: "", caption: "Crowd work gone wrong" },
+    { src: "photos/flyer-nov14-uxbridge.jpg", caption: "Nov 14: Spanky's Comedy Fall Series, Uxbridge MA" },
     { src: "", caption: "Headshot" },
     { src: "", caption: "Open mic night" },
     { src: "", caption: "On the road" },
