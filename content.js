@@ -22,7 +22,7 @@ const SITE = {
   // PLACEHOLDER link — paste the real channel URL, e.g. "https://www.youtube.com/@yourhandle"
   youtube: "https://www.youtube.com/results?search_query=comedian+Steve+Linehan",
   bookingEmail: "booking@dirtysteves.com", // PLACEHOLDER — change to the real email
-  headshot: "", // e.g. "photos/headshot.jpg" — leave "" to show a placeholder
+  headshot: "photos/headshot.jpg", // e.g. "photos/headshot.jpg" — leave "" to show a placeholder
 
   // Each paragraph is its own line in quotes. PLACEHOLDER BIO — replace me.
   bio: [
@@ -31,43 +31,22 @@ const SITE = {
     "Catch him live, follow along on Instagram, or book him for your room.",
   ],
 
+  // venue, time and ticketUrl are optional. Leave "" if unknown.
   shows: [
-    {
-      date: "2026-11-14",
-      time: "8:00 PM",
-      venue: "The Laugh Factory (placeholder)",
-      city: "Your City, ST",
-      note: "Headlining",
-      ticketUrl: "",
-    },
-    {
-      date: "2026-11-21",
-      time: "9:30 PM",
-      venue: "Open Mic at The Dive (placeholder)",
-      city: "Your City, ST",
-      note: "Free entry",
-      ticketUrl: "",
-    },
-    {
-      date: "2026-12-05",
-      time: "7:00 PM",
-      venue: "Comedy Cellar (placeholder)",
-      city: "Another City, ST",
-      note: "Feature set",
-      ticketUrl: "",
-    },
-    {
-      date: "2026-12-31",
-      time: "10:00 PM",
-      venue: "New Year's Eve Roast (placeholder)",
-      city: "Your City, ST",
-      note: "",
-      ticketUrl: "",
-    },
+    { date: "2026-11-07", city: "Salisbury, MA", venue: "", time: "", note: "", ticketUrl: "" },
+    { date: "2026-11-14", city: "Uxbridge, MA", venue: "", time: "", note: "", ticketUrl: "" },
+    { date: "2026-11-19", city: "Pembroke, MA", venue: "", time: "", note: "", ticketUrl: "" },
+    { date: "2026-11-20", city: "Wakefield, MA", venue: "", time: "", note: "", ticketUrl: "" },
+    { date: "2026-11-21", city: "Hudson, NH", venue: "", time: "", note: "", ticketUrl: "" },
+    { date: "2026-11-27", city: "Turners Falls, MA", venue: "", time: "", note: "", ticketUrl: "" },
+    { date: "2026-11-28", city: "Swampscott, MA", venue: "", time: "", note: "", ticketUrl: "" },
+    { date: "2026-12-03", city: "Bellingham, MA", venue: "", time: "", note: "", ticketUrl: "" },
+    { date: "2026-12-06", city: "Middleborough, MA", venue: "", time: "", note: "", ticketUrl: "" },
+    { date: "2026-12-31", city: "", venue: "New Year's Eve Show", time: "", note: "", ticketUrl: "" },
   ],
 
   photos: [
-    { src: "", caption: "Live at the club" },
+    { src: "photos/flyer-fall-2026.jpg", caption: "Fall 2026 tour dates" },
     { src: "", caption: "Backstage" },
     { src: "", caption: "Crowd work gone wrong" },
     { src: "", caption: "Headshot" },

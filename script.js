@@ -27,10 +27,10 @@
     const ymd2 = next.getFullYear() + String(next.getMonth() + 1).padStart(2, "0") + String(next.getDate()).padStart(2, "0");
     const p = new URLSearchParams({
       action: "TEMPLATE",
-      text: S.name + " at " + s.venue,
+      text: S.name + " – " + (s.venue || s.city),
       dates: ymd + "/" + ymd2,
       details: (s.time ? "Showtime " + s.time + ". " : "") + (s.ticketUrl || ""),
-      location: s.venue + ", " + s.city,
+      location: [s.venue, s.city].filter(Boolean).join(", "),
     });
     return "https://calendar.google.com/calendar/render?" + p;
   };
@@ -44,8 +44,8 @@
           <div class="w">${s.d.toLocaleString("en-US", { weekday: "short" })}</div>
         </div>
         <div>
-          <div class="show-venue">${esc(s.venue)}</div>
-          <div class="show-meta">${esc(s.city)}${s.time ? " · " + esc(s.time) : ""}</div>
+          <div class="show-venue">${esc(s.venue || s.city)}</div>
+          ${(s.venue && s.city) || s.time ? `<div class="show-meta">${[s.venue ? s.city : "", s.time].filter(Boolean).map(esc).join(" · ")}</div>` : ""}
           ${s.note ? `<span class="show-note">${esc(s.note)}</span>` : ""}
         </div>
         <div class="show-actions">
