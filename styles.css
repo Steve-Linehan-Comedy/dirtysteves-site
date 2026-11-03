@@ -135,6 +135,8 @@ img { max-width: 100%; display: block; }
 .videos p { color: var(--muted); margin: 0 0 24px; }
 
 /* Contact */
+.contact .socials { margin: 28px 0 0; font-size: .95rem; }
+.contact .socials a { color: var(--accent-2); text-decoration: none; font-weight: 700; }
 .contact { text-align: center; }
 .contact p { color: var(--muted); margin: 0 0 24px; }
 

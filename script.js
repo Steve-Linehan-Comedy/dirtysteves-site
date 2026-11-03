@@ -6,8 +6,9 @@
 
   // Header / links
   $("tagline").textContent = S.tagline;
-  ["ig-hero", "ig-more", "ig-foot"].forEach((id) => ($(id).href = igUrl));
-  ["yt-hero", "yt-btn", "yt-foot"].forEach((id) => ($(id).href = S.youtube));
+  ["ig-hero", "ig-more", "ig-foot", "ig-contact"].forEach((id) => ($(id).href = igUrl));
+  ["yt-hero", "yt-btn", "yt-foot", "yt-contact"].forEach((id) => ($(id).href = S.youtube));
+  ["fb-foot", "fb-contact"].forEach((id) => ($(id).href = S.facebook));
   $("ig-foot").textContent = "@" + S.instagram;
   $("email-btn").href = "mailto:" + S.bookingEmail;
   $("email-btn").textContent = S.bookingEmail;

@@ -19,6 +19,7 @@ const SITE = {
   tagline: "Stand-up comedy. Not for your grandma. Maybe for your grandma.",
   realName: "Steve Linehan",
   instagram: "sl4par",
+  facebook: "https://www.facebook.com/steve.linehan.7",
   // PLACEHOLDER link — paste the real channel URL, e.g. "https://www.youtube.com/@yourhandle"
   youtube: "https://www.youtube.com/results?search_query=comedian+Steve+Linehan",
   bookingEmail: "booking@dirtysteves.com", // PLACEHOLDER — change to the real email
@@ -49,7 +50,7 @@ const SITE = {
     { src: "photos/flyer-fall-2026.jpg", caption: "Fall 2026 tour dates" },
     { src: "photos/flyer-nov7-salisbury.jpg", caption: "Nov 7: Merrimack Valley's Funniest Person Contest, Salisbury MA" },
     { src: "photos/flyer-nov14-uxbridge.jpg", caption: "Nov 14: Spanky's Comedy Fall Series, Uxbridge MA" },
-    { src: "", caption: "Headshot" },
+    { src: "photos/steve-onstage.jpg", caption: "On stage" },
     { src: "", caption: "Open mic night" },
     { src: "", caption: "On the road" },
   ],
