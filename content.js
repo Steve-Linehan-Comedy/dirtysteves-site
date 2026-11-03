@@ -11,7 +11,8 @@
    To ADD A PHOTO: put the image file in the "photos" folder, then add a
    line to "photos" below, e.g.  { src: "photos/my-pic.jpg", caption: "Hi" },
 
-   Leave ticketUrl as "" if there's no ticket link.
+   Leave ticketUrl as "" if there's no ticket link. Add ticketHint: "..."
+   to show a short note under a show (e.g. if the ticket page lists the headliner).
    ========================================================================== */
 
 const SITE = {
@@ -35,7 +36,7 @@ const SITE = {
   // venue, time and ticketUrl are optional. Leave "" if unknown.
   shows: [
     { date: "2026-11-07", city: "Salisbury, MA", venue: "Wicked Funny Comedy Club at the Hungry Traveler", time: "8:00 PM (doors 7:00)", note: "Featuring · Merrimack Valley's Funniest Person Contest · $20", ticketUrl: "https://wickedfunnysalisbury.com" },
-    { date: "2026-11-14", city: "Uxbridge, MA", venue: "Spanky's Comedy at The Polish Hall, 217 Mendon St", time: "8:00 PM", note: "Hosting · Headliner Frank Santorelli (The Sopranos) · $30", ticketUrl: "https://www.tankentertainment.net/#spankys-comedy" },
+    { date: "2026-11-14", city: "Uxbridge, MA", venue: "Spanky's Comedy at The Polish Hall, 217 Mendon St", time: "8:00 PM", note: "Hosting · Headliner Frank Santorelli (The Sopranos) · $30", ticketUrl: "https://www.eventbrite.com/e/frank-santorelli-from-hbos-sopranos-tickets-1787656050369", ticketHint: "Tickets are listed under headliner Frank Santorelli. Steve is hosting this show." },
     { date: "2026-11-19", city: "Pembroke, MA", venue: "", time: "", note: "", ticketUrl: "" },
     { date: "2026-11-20", city: "Wakefield, MA", venue: "", time: "", note: "", ticketUrl: "" },
     { date: "2026-11-21", city: "Hudson, NH", venue: "", time: "", note: "", ticketUrl: "" },

@@ -48,6 +48,7 @@
           <div class="show-venue">${esc(s.venue || s.city)}</div>
           ${(s.venue && s.city) || s.time ? `<div class="show-meta">${[s.venue ? s.city : "", s.time].filter(Boolean).map(esc).join(" · ")}</div>` : ""}
           ${s.note ? `<span class="show-note">${esc(s.note)}</span>` : ""}
+          ${s.ticketHint ? `<div class="show-hint">${esc(s.ticketHint)}</div>` : ""}
         </div>
         <div class="show-actions">
           ${s.ticketUrl ? `<a class="btn btn-primary btn-small" href="${esc(s.ticketUrl)}" target="_blank" rel="noopener">Tickets</a>` : ""}
