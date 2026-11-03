@@ -51,6 +51,7 @@ const SITE = {
     { src: "photos/flyer-nov7-salisbury.jpg", caption: "Nov 7: Merrimack Valley's Funniest Person Contest, Salisbury MA" },
     { src: "photos/flyer-nov14-uxbridge.jpg", caption: "Nov 14: Spanky's Comedy Fall Series, Uxbridge MA" },
     { src: "photos/steve-onstage.jpg", caption: "On stage" },
+    { src: "photos/onstage-blazer.jpg", caption: "Mid-bit" },
     { src: "photos/winners-circle.jpg", caption: "The Winners Circle Comedy Room" },
     { src: "photos/crowd-selfie.jpg", caption: "Packed house" },
   ],
