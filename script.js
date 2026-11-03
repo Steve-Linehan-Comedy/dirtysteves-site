@@ -75,6 +75,20 @@
       ${p.caption ? `<span class="cap">${esc(p.caption)}</span>` : ""}
     </button>`).join("");
 
+  // Size each tile to its photo's shape so nothing gets cropped
+  $("gallery").querySelectorAll(".tile img").forEach((img) => {
+    const fit = () => {
+      if (!img.naturalWidth) return;
+      const ar = img.naturalWidth / img.naturalHeight;
+      const t = img.parentElement;
+      // grow in proportion to width so every tile in a row ends up the same height, uncropped
+      t.style.flex = `${ar} 1 calc(var(--row) * ${ar})`;
+      t.style.height = "auto";
+      t.style.aspectRatio = ar;
+    };
+    img.complete ? fit() : img.addEventListener("load", fit);
+  });
+
   // Lightbox
   const lb = $("lightbox");
   $("gallery").addEventListener("click", (e) => {
