@@ -20,8 +20,7 @@ const SITE = {
   realName: "Steve Linehan",
   instagram: "sl4par",
   facebook: "https://www.facebook.com/steve.linehan.7",
-  // PLACEHOLDER link — paste the real channel URL, e.g. "https://www.youtube.com/@yourhandle"
-  youtube: "https://www.youtube.com/results?search_query=comedian+Steve+Linehan",
+  youtube: "https://www.youtube.com/@stevelinehan22",
   bookingEmail: "booking@dirtysteves.com", // PLACEHOLDER — change to the real email
   headshot: "photos/headshot.jpg", // e.g. "photos/headshot.jpg" — leave "" to show a placeholder
 
