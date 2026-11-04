@@ -55,5 +55,6 @@ const SITE = {
     { src: "photos/onstage-blazer.jpg", caption: "Mid-bit" },
     { src: "photos/winners-circle.jpg", caption: "The Winners Circle Comedy Room" },
     { src: "photos/crowd-selfie.jpg", caption: "Packed house" },
+    { src: "photos/backstage-selfie.jpg", caption: "Backstage" },
   ],
 };
