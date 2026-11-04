@@ -128,6 +128,9 @@ img { max-width: 100%; display: block; }
 }
 .tile img { width: 100%; height: 100%; object-fit: cover; transition: transform .3s ease; }
 .tile .placeholder { aspect-ratio: 1; }
+.tile[hidden] { display: none; }
+.more.back { margin: 0 0 16px; }
+.nav nav a[aria-current="page"] { color: var(--text); }
 .tile:hover img { transform: scale(1.04); }
 .tile .cap {
   position: absolute; left: 0; right: 0; bottom: 0; padding: 30px 12px 10px;

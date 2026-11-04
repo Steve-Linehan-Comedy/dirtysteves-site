@@ -6,7 +6,7 @@
 
   // Header / links
   $("tagline").textContent = S.tagline;
-  ["ig-hero", "ig-more", "ig-foot", "ig-contact"].forEach((id) => ($(id).href = igUrl));
+  ["ig-hero", "ig-foot", "ig-contact"].forEach((id) => ($(id).href = igUrl));
   ["yt-hero", "yt-btn", "yt-foot", "yt-contact"].forEach((id) => ($(id).href = S.youtube));
   ["fb-foot", "fb-contact"].forEach((id) => ($(id).href = S.facebook));
   $("ig-foot").textContent = "@" + S.instagram;
@@ -67,38 +67,6 @@
     ? `<img src="${esc(S.headshot)}" alt="${esc(S.name)}">`
     : `<div class="placeholder"><b>HEADSHOT</b>Add photos/headshot.jpg</div>`;
 
-  // Gallery
-  const photos = S.photos || [];
-  $("gallery").innerHTML = photos.map((p, i) => `
-    <button class="tile" data-i="${i}" aria-label="${esc(p.caption || "Photo")}">
-      ${p.src ? `<img src="${esc(p.src)}" alt="${esc(p.caption)}" loading="lazy">` : `<div class="placeholder"><b>PHOTO</b>${esc(p.caption)}</div>`}
-      ${p.caption ? `<span class="cap">${esc(p.caption)}</span>` : ""}
-    </button>`).join("");
-
-  // Size each tile to its photo's shape so nothing gets cropped
-  $("gallery").querySelectorAll(".tile img").forEach((img) => {
-    const fit = () => {
-      if (!img.naturalWidth) return;
-      const ar = img.naturalWidth / img.naturalHeight;
-      const t = img.parentElement;
-      // grow in proportion to width so every tile in a row ends up the same height, uncropped
-      t.style.flex = `${ar} 1 calc(var(--row) * ${ar})`;
-      t.style.height = "auto";
-      t.style.aspectRatio = ar;
-    };
-    img.complete ? fit() : img.addEventListener("load", fit);
-  });
-
-  // Lightbox
-  const lb = $("lightbox");
-  $("gallery").addEventListener("click", (e) => {
-    const t = e.target.closest(".tile"); if (!t) return;
-    const p = photos[t.dataset.i]; if (!p.src) return;
-    $("lb-img").src = p.src; $("lb-img").alt = p.caption || "";
-    $("lb-cap").textContent = p.caption || "";
-    lb.hidden = false;
-  });
-  const close = () => (lb.hidden = true);
-  lb.addEventListener("click", (e) => { if (e.target !== $("lb-img")) close(); });
-  document.addEventListener("keydown", (e) => { if (e.key === "Escape") close(); });
+  // Gallery: first two rows here; the full set lives on photos.html
+  renderGallery({ maxRows: 2 });
 })();
