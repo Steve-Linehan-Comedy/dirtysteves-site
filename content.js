@@ -14,6 +14,9 @@
    The home page shows the first two rows of photos (so the newest ones);
    "See all photos" opens photos.html with every photo.
 
+   To add a "Show info" button that opens a flyer, put the flyer in "photos"
+   and add  flyer: "photos/the-flyer.jpg"  to that show.
+
    Leave ticketUrl as "" if there's no ticket link. Add ticketHint: "..."
    to show a short note under a show (e.g. if the ticket page lists the headliner).
    ========================================================================== */
@@ -38,12 +41,12 @@ const SITE = {
 
   // venue, time and ticketUrl are optional. Leave "" if unknown.
   shows: [
-    { date: "2026-11-07", city: "Salisbury, MA", venue: "Wicked Funny Comedy Club at the Hungry Traveler", time: "8:00 PM (doors 7:00)", note: "Featuring · Merrimack Valley's Funniest Person Contest · $20", ticketUrl: "https://wickedfunnysalisbury.com" },
-    { date: "2026-11-14", city: "Uxbridge, MA", venue: "Spanky's Comedy at The Polish Hall, 217 Mendon St", time: "8:00 PM", note: "Hosting · Headliner Frank Santorelli (The Sopranos) · $30", ticketUrl: "https://checkout.square.site/merchant/MLEGYX97KWR8P/checkout/XHUQKONEAFEMHKR74KY5JX35", ticketHint: "The ticket page is titled \"Spanky's Comedy Presents Frank Santorelli\". Steve is hosting this show." },
+    { date: "2026-11-07", city: "Salisbury, MA", venue: "Wicked Funny Comedy Club at the Hungry Traveler", time: "8:00 PM (doors 7:00)", note: "Featuring · Merrimack Valley's Funniest Person Contest · $20", ticketUrl: "https://wickedfunnysalisbury.com", flyer: "photos/flyer-nov7-salisbury.jpg" },
+    { date: "2026-11-14", city: "Uxbridge, MA", venue: "Spanky's Comedy at The Polish Hall, 217 Mendon St", time: "8:00 PM", note: "Hosting · Headliner Frank Santorelli (The Sopranos) · $30", ticketUrl: "https://checkout.square.site/merchant/MLEGYX97KWR8P/checkout/XHUQKONEAFEMHKR74KY5JX35", ticketHint: "The ticket page is titled \"Spanky's Comedy Presents Frank Santorelli\". Steve is hosting this show.", flyer: "photos/flyer-nov14-uxbridge.jpg" },
     { date: "2026-11-19", city: "Pembroke, MA", venue: "", time: "", note: "", ticketUrl: "" },
     { date: "2026-11-20", city: "Wakefield, MA", venue: "", time: "", note: "", ticketUrl: "" },
     { date: "2026-11-21", city: "Hudson, NH", venue: "", time: "", note: "", ticketUrl: "" },
-    { date: "2026-11-27", city: "Turners Falls, MA", venue: "Montague Elks 2521, 1 Elks Ave", time: "7:30 PM (doors 6:30)", note: "With Dave Andrews & Dan Gill · Adults only · $20 advance / $25 cash at door", ticketUrl: "" },
+    { date: "2026-11-27", city: "Turners Falls, MA", venue: "Montague Elks 2521, 1 Elks Ave", time: "7:30 PM (doors 6:30)", note: "With Dave Andrews & Dan Gill · Adults only · $20 advance / $25 cash at door", ticketUrl: "", flyer: "photos/flyer-nov27-turnersfalls.jpg" },
     { date: "2026-11-28", city: "Swampscott, MA", venue: "", time: "", note: "", ticketUrl: "" },
     { date: "2026-12-03", city: "Bellingham, MA", venue: "", time: "", note: "", ticketUrl: "" },
     { date: "2026-12-06", city: "Middleborough, MA", venue: "", time: "", note: "", ticketUrl: "" },
