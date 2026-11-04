@@ -23,7 +23,6 @@ function renderGallery({ maxRows = Infinity } = {}) {
     const cutoff = tops[maxRows];
     let hiddenCount = 0;
     if (cutoff !== undefined) tiles.forEach((t) => { if (t.offsetTop >= cutoff) { t.hidden = true; hiddenCount++; } });
-    if (more) more.textContent = `See all ${tiles.length} photos →`;
   };
   let pending = false;
   const schedule = () => {
