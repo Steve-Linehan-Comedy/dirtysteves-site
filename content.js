@@ -1,5 +1,5 @@
 /* ==========================================================================
-   DIRTY STEVE'S — SITE CONTENT
+   STEVE LINEHAN — SITE CONTENT
    --------------------------------------------------------------------------
    This is the ONLY file you need to edit to update the website.
 
@@ -16,8 +16,8 @@
    ========================================================================== */
 
 const SITE = {
-  name: "Dirty Steve",
-  tagline: "Stand-up comedy. Not for your grandma. Maybe for your grandma.",
+  name: "Steve Linehan",
+  tagline: "Stand-up comedy. Not for your grandma. Maybe for your grandma. What the hell, bring your Grandma.",
   realName: "Steve Linehan",
   instagram: "sl4par",
   facebook: "https://www.facebook.com/steve.linehan.7",

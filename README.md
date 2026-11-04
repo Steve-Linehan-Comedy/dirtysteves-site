@@ -1,6 +1,6 @@
 # dirtysteves.com
 
-A simple static website for Dirty Steve (Steve Linehan): upcoming shows, bio, photo gallery, YouTube, and booking.
+A simple static website for comedian Steve Linehan: upcoming shows, bio, photo gallery, YouTube, and booking.
 No build step, no database. Just upload these files.
 
 ## Updating the site (no coding needed)
