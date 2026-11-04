@@ -27,7 +27,7 @@ const SITE = {
   realName: "Steve Linehan",
   instagram: "sl4par",
   facebook: "https://www.facebook.com/steve.linehan.7",
-  youtube: "https://www.youtube.com/@stevelinehan22",
+  youtube: "https://www.youtube.com/@stevelinehan22/videos",
   bookingEmail: "booking@stevelinehancomedy.com", // PLACEHOLDER — change to the real email
   heroImage: "photos/onstage-blazer.jpg", // big photo at the top of the page
   headshot: "photos/headshot.jpg", // e.g. "photos/headshot.jpg" — leave "" to show a placeholder
