@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Photos | Comedian Steve Linehan</title>
+  <meta name="description" content="Photos of comedian Steve Linehan on stage and around the New England comedy scene.">
+  <meta property="og:title" content="Comedian Steve Linehan">
+  <meta property="og:description" content="Upcoming shows, bio, photos and booking.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="index.html">STEVE LINEHAN</a>
+    <nav>
+      <a href="index.html#shows">Shows</a>
+      <a href="index.html#about">About</a>
+      <a href="photos.html" aria-current="page">Photos</a>
+      <a href="index.html#videos">Videos</a>
+      <a href="index.html#contact">Booking</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="photos" class="section">
+      <p class="more back"><a href="index.html">← Back to home</a></p>
+      <h2 class="section-title">Photos</h2>
+      <div id="gallery" class="gallery"></div>
+      <p class="more"><a id="ig-more" target="_blank" rel="noopener">More on Instagram →</a></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span><a id="ig-foot" target="_blank" rel="noopener"></a> · <a id="yt-foot" target="_blank" rel="noopener">YouTube</a> · <a id="fb-foot" target="_blank" rel="noopener">Facebook</a></span>
+    <span>© <span id="year"></span> Steve Linehan</span>
+  </footer>
+
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lb-close" aria-label="Close">×</button>
+    <img id="lb-img" alt="">
+    <p id="lb-cap"></p>
+  </div>
+
+  <script src="content.js"></script>
+  <script src="gallery.js"></script>
+  <script>
+    (function () {
+      const S = window.SITE || SITE;
+      const ig = "https://instagram.com/" + S.instagram;
+      document.getElementById("ig-more").href = ig;
+      document.getElementById("ig-foot").href = ig;
+      document.getElementById("ig-foot").textContent = "@" + S.instagram;
+      document.getElementById("yt-foot").href = S.youtube;
+      document.getElementById("fb-foot").href = S.facebook;
+      document.getElementById("year").textContent = new Date().getFullYear();
+      renderGallery();
+    })();
+  </script>
+</body>
+</html>

@@ -9,7 +9,10 @@
    Shows disappear from the site automatically after their date passes.
 
    To ADD A PHOTO: put the image file in the "photos" folder, then add a
-   line to "photos" below, e.g.  { src: "photos/my-pic.jpg", caption: "Hi" },
+   line at the TOP of the "photos" list below, e.g.
+     { src: "photos/my-pic.jpg", caption: "Hi" },
+   The home page shows the first two rows of photos (so the newest ones);
+   "See all photos" opens photos.html with every photo.
 
    Leave ticketUrl as "" if there's no ticket link. Add ticketHint: "..."
    to show a short note under a show (e.g. if the ticket page lists the headliner).
