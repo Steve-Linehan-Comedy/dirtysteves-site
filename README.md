@@ -1,6 +1,6 @@
-# dirtysteves.com
+# stevelinehancomedy.com
 
-A simple static website for Dirty Steve (Steve Linehan): upcoming shows, bio, photo gallery, YouTube, and booking.
+A simple static website for comedian Steve Linehan: upcoming shows, bio, photo gallery, YouTube, and booking.
 No build step, no database. Just upload these files.
 
 ## Updating the site (no coding needed)
@@ -19,8 +19,8 @@ On GitHub you can do all of this in the browser: open `content.js`, click the pe
 1. Sign up at https://app.netlify.com (free).
 2. Go to https://app.netlify.com/drop and drag this whole folder (or unzip `dirtysteves-site.zip` first and drag the folder) onto the page. It goes live at a random `something.netlify.app` address.
 3. In the new site: **Site configuration → Change site name** to something like `dirtysteves`.
-4. **Domain management → Add a domain** → enter `dirtysteves.com` → Verify → Add domain. Netlify will also add `www.dirtysteves.com`.
-5. In GoDaddy: **My Products → dirtysteves.com → DNS**:
+4. **Domain management → Add a domain** → enter `stevelinehancomedy.com` → Verify → Add domain. Netlify will also add `www.stevelinehancomedy.com`.
+5. In GoDaddy: **My Products → stevelinehancomedy.com → DNS**:
    - Delete the existing `A` record for `@` (and any "Parked" or forwarding entries).
    - Add an `A` record: Name `@`, Value `75.2.60.5`.
    - Edit or add a `CNAME` record: Name `www`, Value `dirtysteves.netlify.app` (your site's Netlify address).
@@ -32,12 +32,12 @@ To update the site after a drag-and-drop deploy: edit `content.js` or add photos
 
 1. Create a GitHub repo (e.g. `dirtysteves-site`) and upload all these files to it.
 2. In the repo: **Settings → Pages → Build and deployment**, Source = "Deploy from a branch", Branch = `main`, folder = `/ (root)`. Save.
-3. On the same page, under **Custom domain**, enter `dirtysteves.com` and save. (This creates a `CNAME` file.)
+3. On the same page, under **Custom domain**, enter `stevelinehancomedy.com` and save. (This creates a `CNAME` file.)
 4. Once DNS works (step below), tick **Enforce HTTPS**.
 
 ## Pointing the GoDaddy domain at it
 
-In GoDaddy: **My Products → dirtysteves.com → DNS → Manage DNS**.
+In GoDaddy: **My Products → stevelinehancomedy.com → DNS → Manage DNS**.
 
 1. Delete any existing `A` records for `@` (and GoDaddy "Parked"/forwarding entries).
 2. Add four `A` records, Name `@`, pointing to:

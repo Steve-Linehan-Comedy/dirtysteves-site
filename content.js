@@ -1,5 +1,5 @@
 /* ==========================================================================
-   DIRTY STEVE'S — SITE CONTENT
+   STEVE LINEHAN — SITE CONTENT
    --------------------------------------------------------------------------
    This is the ONLY file you need to edit to update the website.
 
@@ -16,21 +16,21 @@
    ========================================================================== */
 
 const SITE = {
-  name: "Dirty Steve",
-  tagline: "Stand-up comedy. Not for your grandma. Maybe for your grandma.",
+  name: "Steve Linehan",
+  tagline: "Stand-up comedy. Not for your grandma. Maybe for your grandma. What the hell, bring your Grandma.",
   realName: "Steve Linehan",
   instagram: "sl4par",
   facebook: "https://www.facebook.com/steve.linehan.7",
   youtube: "https://www.youtube.com/@stevelinehan22",
-  bookingEmail: "booking@dirtysteves.com", // PLACEHOLDER — change to the real email
+  bookingEmail: "booking@stevelinehancomedy.com", // PLACEHOLDER — change to the real email
   heroImage: "photos/onstage-blazer.jpg", // big photo at the top of the page
   headshot: "photos/headshot.jpg", // e.g. "photos/headshot.jpg" — leave "" to show a placeholder
 
-  // Each paragraph is its own line in quotes. PLACEHOLDER BIO — replace me.
+  // Each paragraph is its own line in quotes.
   bio: [
-    "Steve Linehan has been telling jokes on stages, in bars, and occasionally in parking lots for years. His act is honest, a little filthy, and built on the stuff most people only say in the group chat.",
-    "He's a regular on the local club circuit and has opened for touring headliners. When he's not on stage he's probably writing, or arguing with his phone about it.",
-    "Catch him live, follow along on Instagram, or book him for your room.",
+    "New England based comedian utilizing quick wit, creative mind and self-deprecating awareness to entertain audiences of all ages throughout the region. Born and raised in a large Irish Catholic family setting whereby love, loyalty, friendship and perhaps a hint of alcoholism ruled the roost on a daily basis.",
+    "Steve's creative style and warming stage presence have audience members laughing from start to finish. Steve quickly ingrained himself in the local comedy scene by becoming one of the top show hosts in the industry.",
+    "His experience in hosting and opening shows creates a fun, energetic environment while setting the tone of the show for some of the top national headlining acts in the country. He has recently worked on shows with comedy legends Lenny Clarke, Don Gavin, Steve Sweeney, Juston McKinney, Christine Hurley, Frank Santorelli and many, many others.",
   ],
 
   // venue, time and ticketUrl are optional. Leave "" if unknown.
@@ -55,5 +55,6 @@ const SITE = {
     { src: "photos/onstage-blazer.jpg", caption: "Mid-bit" },
     { src: "photos/winners-circle.jpg", caption: "The Winners Circle Comedy Room" },
     { src: "photos/crowd-selfie.jpg", caption: "Packed house" },
+    { src: "photos/backstage-selfie.jpg", caption: "Backstage" },
   ],
 };
