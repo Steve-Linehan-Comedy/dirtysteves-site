@@ -48,12 +48,13 @@ const SITE = {
     { date: "2026-11-21", city: "Hudson, NH", venue: "", time: "", note: "", ticketUrl: "" },
     { date: "2026-11-27", city: "Turners Falls, MA", venue: "Montague Elks 2521, 1 Elks Ave", time: "7:30 PM (doors 6:30)", note: "With Dave Andrews & Dan Gill · Adults only · $20 advance / $25 cash at door", ticketUrl: "", flyer: "photos/flyer-nov27-turnersfalls.jpg" },
     { date: "2026-11-28", city: "Swampscott, MA", venue: "", time: "", note: "", ticketUrl: "" },
-    { date: "2026-12-03", city: "Bellingham, MA", venue: "", time: "", note: "", ticketUrl: "" },
+    { date: "2026-12-03", city: "Bellingham, MA", venue: "VFW Post 7272, 940 S. Main Street", time: "7:00 PM", note: "Laughter Comedy Show · With Annie Powell & Paul Gilligan · $30", ticketUrl: "", ticketHint: "Tickets are sold at the VFW Post. Raffles, 50/50 and snacks.", flyer: "photos/flyer-dec3-bellingham.jpg" },
     { date: "2026-12-06", city: "Middleborough, MA", venue: "", time: "", note: "", ticketUrl: "" },
     { date: "2026-12-31", city: "", venue: "New Year's Eve Show", time: "", note: "", ticketUrl: "" },
   ],
 
   photos: [
+    { src: "photos/flyer-dec3-bellingham.jpg", caption: "Dec 3: Laughter Comedy Show at VFW Post 7272, Bellingham MA" },
     { src: "photos/flyer-fall-2026.jpg", caption: "Fall 2026 tour dates" },
     { src: "photos/flyer-nov7-salisbury.jpg", caption: "Nov 7: Merrimack Valley's Funniest Person Contest, Salisbury MA" },
     { src: "photos/flyer-nov14-uxbridge.jpg", caption: "Nov 14: Spanky's Comedy Fall Series, Uxbridge MA" },
