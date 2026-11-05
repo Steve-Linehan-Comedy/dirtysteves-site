@@ -50,10 +50,11 @@ const SITE = {
     { date: "2026-11-28", city: "Swampscott, MA", venue: "The Dory Live, 153 Humphrey St", time: "8:00 PM", note: "Paul D'Angelo Thanksgiving Weekend Comedy Special · Host Max Emmerich · $25", ticketUrl: "https://thedorylive.com", ticketHint: "The ticket page lists Paul D'Angelo's Thanksgiving Weekend Comedy Special.", flyer: "photos/flyer-nov28-swampscott.jpg" },
     { date: "2026-12-03", city: "Bellingham, MA", venue: "VFW Post 7272, 940 S. Main Street", time: "7:00 PM", note: "Laughter Comedy Show · Headliner Paul Gilligan, with Annie Powell · $30", ticketUrl: "", ticketHint: "Tickets are sold at the VFW Post, or through Thanks to Yanks or any Post or Auxiliary member. Raffles, 50/50 and snacks.", flyer: "photos/flyer-dec3-bellingham.jpg" },
     { date: "2026-12-06", city: "Middleborough, MA", venue: "Tailgating at the Boro of Laughs, The Alley Theatre", time: "1:00 PM", note: "Patriots vs. Bills pregame comedy · With Steve Sweeney, Barry Wilson & Greg Thomas · $32 · Food & drinks served", ticketUrl: "mailto:burtwoodschool@aol.com?subject=Tickets%20for%20Boro%20of%20Laughs%20Dec%206", ticketHint: "Tickets: email burtwoodschool@aol.com, or scan the Venmo code on the flyer (tap Show info).", flyer: "photos/flyer-dec6-middleborough.jpg" },
-    { date: "2026-12-31", city: "", venue: "New Year's Eve Show", time: "", note: "", ticketUrl: "" },
+    { date: "2026-12-31", city: "Danvers, MA", venue: "Hoppin' NYE Bash at the DoubleTree Hilton, 50 Ferncroft Rd", time: "", note: "Hosting · Comedy headliner Paul Gilligan · Jay Buckley & The All Star Band · Buffet, dance party & champagne toast", ticketUrl: "", flyer: "photos/flyer-dec31-danvers.jpg" },
   ],
 
   photos: [
+    { src: "photos/flyer-dec31-danvers.jpg", caption: "Dec 31: CPF Productions Hoppin' NYE Bash, DoubleTree Hilton Danvers MA" },
     { src: "photos/flyer-dec6-middleborough.jpg", caption: "Dec 6: Tailgating at the Boro of Laughs, The Alley Theatre, Middleborough MA" },
     { src: "photos/flyer-nov20-wakefield.jpg", caption: "Nov 20: Old Timers Night at the West Side Social Club, Wakefield MA" },
     { src: "photos/flyer-nov28-swampscott.jpg", caption: "Nov 28: Paul D'Angelo Thanksgiving Weekend Comedy Special at The Dory Live, Swampscott MA" },
