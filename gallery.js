@@ -13,7 +13,6 @@ function renderGallery({ maxRows = Infinity } = {}) {
     </button>`).join("");
 
   const tiles = [...gallery.querySelectorAll(".tile")];
-  const more = $("gallery-more");
 
   // Only the first `maxRows` rows show; the rest are hidden and "See all photos" links to photos.html.
   const clampRows = () => {
@@ -21,8 +20,7 @@ function renderGallery({ maxRows = Infinity } = {}) {
     tiles.forEach((t) => (t.hidden = false));
     const tops = [...new Set(tiles.map((t) => t.offsetTop))].sort((a, b) => a - b);
     const cutoff = tops[maxRows];
-    let hiddenCount = 0;
-    if (cutoff !== undefined) tiles.forEach((t) => { if (t.offsetTop >= cutoff) { t.hidden = true; hiddenCount++; } });
+    if (cutoff !== undefined) tiles.forEach((t) => { if (t.offsetTop >= cutoff) t.hidden = true; });
   };
   let pending = false;
   const schedule = () => {
@@ -48,16 +46,24 @@ function renderGallery({ maxRows = Infinity } = {}) {
   window.addEventListener("resize", schedule);
   clampRows();
 
-  // Lightbox
-  const lb = $("lightbox");
   gallery.addEventListener("click", (e) => {
     const t = e.target.closest(".tile"); if (!t) return;
     const p = photos[t.dataset.i]; if (!p.src) return;
-    $("lb-img").src = p.src; $("lb-img").alt = p.caption || "";
-    $("lb-cap").textContent = p.caption || "";
-    lb.hidden = false;
+    openLightbox(p.src, p.caption);
   });
-  const close = () => (lb.hidden = true);
-  lb.addEventListener("click", (e) => { if (e.target !== $("lb-img")) close(); });
-  document.addEventListener("keydown", (e) => { if (e.key === "Escape") close(); });
+}
+
+/* Full-size image viewer, used by the gallery and by the "Show info" flyer buttons. */
+function openLightbox(src, caption) {
+  const $ = (id) => document.getElementById(id);
+  const lb = $("lightbox");
+  $("lb-img").src = src; $("lb-img").alt = caption || "";
+  $("lb-cap").textContent = caption || "";
+  lb.hidden = false;
+  if (!lb.dataset.ready) {
+    lb.dataset.ready = "1";
+    const close = () => (lb.hidden = true);
+    lb.addEventListener("click", (e) => { if (e.target !== $("lb-img")) close(); });
+    document.addEventListener("keydown", (e) => { if (e.key === "Escape") close(); });
+  }
 }

@@ -51,11 +51,17 @@
           ${s.ticketHint ? `<div class="show-hint">${esc(s.ticketHint)}</div>` : ""}
         </div>
         <div class="show-actions">
+          ${s.flyer ? `<button type="button" class="btn btn-ghost btn-small" data-flyer="${esc(s.flyer)}" data-cap="${esc(s.venue || s.city)} flyer">Show info</button>` : ""}
           ${s.ticketUrl ? `<a class="btn btn-primary btn-small" href="${esc(s.ticketUrl)}" target="_blank" rel="noopener">Tickets</a>` : ""}
           <a class="btn btn-ghost btn-small" href="${gcal(s)}" target="_blank" rel="noopener">+ Calendar</a>
         </div>
       </article>`).join("")
     : `<p class="empty">No shows on the calendar right now. Follow <a href="${igUrl}" target="_blank" rel="noopener">@${esc(S.instagram)}</a> for new dates.</p>`;
+
+  // "Show info" opens the show's flyer full-size
+  $("show-list").addEventListener("click", (e) => {
+    const b = e.target.closest("[data-flyer]"); if (b) openLightbox(b.dataset.flyer, b.dataset.cap);
+  });
 
   // Hero photo
   if (S.heroImage) $("hero-photo").innerHTML = `<img src="${esc(S.heroImage)}" alt="${esc(S.realName || S.name)} on stage">`;
