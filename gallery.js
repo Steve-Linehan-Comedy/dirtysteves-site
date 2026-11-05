@@ -17,10 +17,14 @@ function renderGallery({ maxRows = Infinity } = {}) {
   // Only the first `maxRows` rows show; the rest are hidden and "See all photos" links to photos.html.
   const clampRows = () => {
     if (maxRows === Infinity) return;
+    gallery.classList.remove("clamped");
     tiles.forEach((t) => (t.hidden = false));
     const tops = [...new Set(tiles.map((t) => t.offsetTop))].sort((a, b) => a - b);
     const cutoff = tops[maxRows];
-    if (cutoff !== undefined) tiles.forEach((t) => { if (t.offsetTop >= cutoff) t.hidden = true; });
+    if (cutoff === undefined) return;
+    tiles.forEach((t) => { if (t.offsetTop >= cutoff) t.hidden = true; });
+    // The last row shown was a full row, so let it stretch edge to edge like the rows above it
+    gallery.classList.add("clamped");
   };
   let pending = false;
   const schedule = () => {
