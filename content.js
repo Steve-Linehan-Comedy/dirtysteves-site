@@ -67,7 +67,6 @@ const SITE = {
     { src: "photos/flyer-dec6-middleborough.jpg", caption: "Dec 6: Tailgating at the Boro of Laughs, The Alley Theatre, Middleborough MA" },
     { src: "photos/flyer-nov20-wakefield.jpg", caption: "Nov 20: Old Timers Night at the West Side Social Club, Wakefield MA" },
     { src: "photos/flyer-nov28-swampscott.jpg", caption: "Nov 28: Wicked Funny Comedy Night at The Dory, Swampscott MA" },
-    { src: "photos/flyer-fall-2026.jpg", caption: "Fall 2026 tour dates" },
     { src: "photos/flyer-nov7-salisbury.jpg", caption: "Nov 7: Merrimack Valley's Funniest Person Contest, Salisbury MA" },
     { src: "photos/flyer-nov14-uxbridge.jpg", caption: "Nov 14: Spanky's Comedy Fall Series, Uxbridge MA" },
     { src: "photos/flyer-nov27-turnersfalls.jpg", caption: "Nov 27: Comedy Show at Montague Elks, Turners Falls MA" },
